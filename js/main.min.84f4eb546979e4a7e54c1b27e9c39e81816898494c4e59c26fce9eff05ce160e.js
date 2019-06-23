@@ -1,4 +1,4 @@
-window.onload=function(){var navbar=document.querySelector('nav');var navpageinfo=document.querySelector('#navpageinfo');var navlinks=document.querySelector('#navlinks');var topSection=document.querySelector('#topsection');var topSectionStyles;var topSectionHeight;function gettopSectionHeight(){topSectionStyles=window.getComputedStyle(topSection);topSectionHeight=topSection.offsetHeight+
+window.onload=function(){var navbar=document.querySelector('nav');var navpageinfo=document.querySelector('.navpageinfo');var navlinks=document.querySelector('.navlinks');var topSection=document.querySelector('.topsection');var topSectionStyles;var topSectionHeight;function gettopSectionHeight(){topSectionStyles=window.getComputedStyle(topSection);topSectionHeight=topSection.offsetHeight+
 parseFloat(topSectionStyles['marginTop'])-
 navbar.offsetHeight;}
 gettopSectionHeight();window.onresize=function(){gettopSectionHeight();}
