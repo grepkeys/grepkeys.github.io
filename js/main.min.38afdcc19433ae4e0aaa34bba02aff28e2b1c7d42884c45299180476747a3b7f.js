@@ -6,6 +6,6 @@ function switchNavbar(){if(window.scrollY>topSectionHeight){navlinks.style.visib
 var prevScrollPos=window.pageYOffset;var navbar=document.querySelector('nav');var origShadow=navbar.style.boxShadow;function showNavbar(){navbar.style.top=0;navbar.style.boxShadow=origShadow;}
 function hideNavbar(){navbar.style.top='-'+navbar.offsetHeight+'px';navbar.style.boxShadow='none';}
 function autohideNavbar(){var currentScrollPos=window.pageYOffset;var scrollPosDiff=currentScrollPos-prevScrollPos;if(currentScrollPos<300){showNavbar();return;}
-if(scrollPosDiff>1){hideNavbar();}else if(scrollPosDiff<-5){showNavbar();}
+if(scrollPosDiff>1){hideNavbar();}else if(scrollPosDiff<-1){showNavbar();}
 prevScrollPos=currentScrollPos;}
 window.onscroll=function(){switchNavbar();autohideNavbar();}}
